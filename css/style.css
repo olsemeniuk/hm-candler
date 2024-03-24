@@ -257,6 +257,20 @@ input, input::placeholder {
     .menu__link, .tel {
         font-size : 10px;
     }
+
+    .footer {
+        font-size : 10px;
+    }
+
+    .footer__inner {
+        flex-wrap : wrap;
+    }
+
+    .footer__contacts {
+        align-items : center;
+        margin      : 15px 0 0;
+        width       : 100%;
+    }
 }
 
 @media (max-width : 768px) {
@@ -287,10 +301,31 @@ input, input::placeholder {
         right            : 0;
         top              : 100%;
         transform        : translateX(100%);
-        transition       : transform 0.3s ease-out;
+        transition       : transform 0.2s ease-out;
     }
 
     .menu__list--active {
         transform : translateX(0);
+    }
+}
+
+@media (max-width : 576px) {
+    .footer__inner {
+        align-items    : center;
+        flex-direction : column;
+        padding : 50px 0;
+    }
+
+    .footer__menu-list {
+        flex-direction : column;
+        text-align-last : center;
+    }
+
+    .footer__logo, .footer__menu {
+        margin : 0 0 50px;
+    }
+
+    .footer__contacts {
+        margin : 0;
     }
 }
