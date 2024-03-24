@@ -1,4 +1,8 @@
-/*custom properties*/
+/*
+===========================
+    CUSTOM PROPERTIES
+===========================
+*/
 :root {
     --color-beige    : #bea495;
     --color-beige1   : #7b6152;
@@ -13,7 +17,11 @@
     --font-yeseva    : "Yeseva One", serif;
 }
 
-/*basic styles*/
+/*
+===========================
+    BASIC STYLES
+===========================
+*/
 html {
     box-sizing : border-box;
 }
@@ -28,7 +36,7 @@ body {
     font-family      : var(--font-comfortaa);
     font-size        : 14px;
     font-weight      : 400;
-    line-height      : normal;
+    line-height      : 1.2;
 }
 
 a {
@@ -70,4 +78,55 @@ input, input::placeholder {
     font-weight      : 600;
     min-width        : 150px;
     padding          : 19px;
+}
+
+/*
+===========================
+    HEADER
+===========================
+*/
+.header__inner {
+    align-items : center;
+    display     : flex;
+    padding     : 4px 0;
+}
+
+.header__logo {
+    margin-right : auto;
+}
+
+.header__menu {
+    margin : 0 auto;
+}
+
+.header__tel {
+    margin-left : auto;
+}
+
+.menu__list {
+    display : flex;
+    gap     : 20px;
+}
+
+.menu__link {
+    text-transform : uppercase;
+}
+
+.header__tel {
+    padding-left : 23px;
+    position     : relative;
+}
+
+.header__tel::before {
+    background-image    : url("../images/icons/phone_icon.svg");
+    background-position : center;
+    background-repeat   : no-repeat;
+    background-size     : contain;
+    content             : "";
+    height              : 20px;
+    left                : 0;
+    position            : absolute;
+    top                 : 50%;
+    transform           : translateY(-50%);
+    width               : 20px;
 }
