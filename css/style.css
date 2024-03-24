@@ -4,17 +4,19 @@
 ===========================
 */
 :root {
-    --color-beige    : #bea495;
-    --color-beige1   : #7b6152;
-    --color-beige2   : #a5978e;
-    --color-black    : #000000;
-    --font-comfortaa : "Comfortaa", sans-serif;
-    --color-dark     : #272727;
-    --color-grey     : #fafafa;
-    --color-pink     : #fff8f3;
-    --font-roboto    : "Roboto", sans-serif;
-    --color-yellow   : #ffbd59;
-    --font-yeseva    : "Yeseva One", serif;
+    --color-beige     : #bea495;
+    --color-beige1    : #7b6152;
+    --color-beige2    : #a5978e;
+    --color-black     : #000000;
+    --font-comfortaa  : "Comfortaa", sans-serif;
+    --color-dark      : #272727;
+    --color-dark-grey : #333333;
+    --color-grey      : #fafafa;
+    --color-pink      : #fff8f3;
+    --font-roboto     : "Roboto", sans-serif;
+    --color-white     : #ffffff;
+    --color-yellow    : #ffbd59;
+    --font-yeseva     : "Yeseva One", serif;
 }
 
 /*
@@ -24,7 +26,7 @@
 */
 html {
     box-sizing : border-box;
-    height : 100%;
+    height     : 100%;
 }
 
 *, *::before, *::after {
@@ -32,7 +34,6 @@ html {
 }
 
 body {
-    min-height: 100%;
     background-color   : var(--color-pink);
     color              : var(--color-black);
     display            : grid;
@@ -41,6 +42,7 @@ body {
     font-weight        : 400;
     grid-template-rows : auto 1fr auto;
     line-height        : 1.2;
+    min-height         : 100%;
 }
 
 a {
@@ -82,6 +84,19 @@ input, input::placeholder {
     font-weight      : 600;
     min-width        : 150px;
     padding          : 19px;
+}
+
+.visually-hidden {
+    border      : 0;
+    clip        : rect(0 0 0 0);
+    clip-path   : inset(100%);
+    height      : 1px;
+    margin      : -1px;
+    overflow    : hidden;
+    padding     : 0;
+    position    : absolute;
+    white-space : nowrap;
+    width       : 1px;
 }
 
 /*
@@ -133,4 +148,76 @@ input, input::placeholder {
     top                 : 50%;
     transform           : translateY(-50%);
     width               : 20px;
+}
+
+/*
+===========================
+    FOOTER
+===========================
+*/
+.footer {
+    background-color : var(--color-white);
+    color            : var(--color-dark-grey);
+}
+
+.footer__inner {
+    align-items     : center;
+    display         : flex;
+    justify-content : center;
+    padding         : 39px 0 34px;
+}
+
+.footer__logo {
+    margin-right : auto;
+}
+
+.footer__menu {
+    margin : 0 auto;
+}
+
+.footer__contacts {
+    display        : flex;
+    flex-direction : column;
+    margin-left    : auto;
+    row-gap        : 15px;
+}
+
+.socials {
+    column-gap : 15px;
+    display    : flex;
+}
+
+.socials__link {
+    min-height : 22px;
+    min-width  : 22px;
+    position   : relative;
+}
+
+.socials__link::before {
+    background-position : center;
+    background-repeat   : no-repeat;
+    background-size     : contain;
+    content             : "";
+    height              : 100%;
+    left                : 50%;
+    position            : absolute;
+    top                 : 50%;
+    transform           : translate(-50%, -50%);
+    width               : 100%;
+}
+
+.socials__link--facebook::before {
+    background-image : url("../images/icons/facebook_icon.svg");
+}
+
+.socials__link--instagram::before {
+    background-image : url("../images/icons/instagram_icon.svg");
+}
+
+.socials__link--linkedin::before {
+    background-image : url("../images/icons/linkedin_icon.svg");
+}
+
+.socials__link--youtube::before {
+    background-image : url("../images/icons/youtube_icon.svg");
 }
