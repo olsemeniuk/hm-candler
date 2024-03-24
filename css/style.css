@@ -43,6 +43,7 @@ body {
     grid-template-rows : auto 1fr auto;
     line-height        : 1.2;
     min-height         : 100%;
+    overflow-x         : hidden;
 }
 
 a {
@@ -104,6 +105,10 @@ input, input::placeholder {
     HEADER
 ===========================
 */
+.header {
+    position : relative;
+}
+
 .header__inner {
     align-items : center;
     display     : flex;
@@ -112,6 +117,27 @@ input, input::placeholder {
 
 .header__logo {
     margin-right : auto;
+}
+
+.menu__button {
+    display    : none;
+    min-height : 25px;
+    min-width  : 30px;
+    position   : relative;
+}
+
+.menu__button::before {
+    background-image    : url("../images/icons/menu_icon.svg");
+    background-position : center;
+    background-repeat   : no-repeat;
+    background-size     : contain;
+    content             : "";
+    height              : 100%;
+    left                : 50%;
+    position            : absolute;
+    top                 : 50%;
+    transform           : translate(-50%, -50%);
+    width               : 100%;
 }
 
 .header__menu {
@@ -220,4 +246,51 @@ input, input::placeholder {
 
 .socials__link--youtube::before {
     background-image : url("../images/icons/youtube_icon.svg");
+}
+
+/*
+===========================
+    ADAPTIVE
+===========================
+*/
+@media (max-width : 992px) {
+    .menu__link, .tel {
+        font-size : 10px;
+    }
+}
+
+@media (max-width : 768px) {
+    .header__logo {
+        order : 1;
+    }
+
+    .header__tel {
+        margin : 0 auto;
+        order  : 2;
+    }
+
+    .header__menu {
+        margin-right : 0;
+        order        : 3;
+    }
+
+    .menu__button {
+        display : block;
+    }
+
+    .header__menu-list {
+        background-color : var(--color-beige1);
+        color            : var(--color-pink);
+        flex-direction   : column;
+        padding          : 25px 25px 20px 45px;
+        position         : absolute;
+        right            : 0;
+        top              : 100%;
+        transform        : translateX(100%);
+        transition       : transform 0.3s ease-out;
+    }
+
+    .menu__list--active {
+        transform : translateX(0);
+    }
 }
