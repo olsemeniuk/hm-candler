@@ -1,0 +1,73 @@
+/*custom properties*/
+:root {
+    --color-beige    : #bea495;
+    --color-beige1   : #7b6152;
+    --color-beige2   : #a5978e;
+    --color-black    : #000000;
+    --font-comfortaa : "Comfortaa", sans-serif;
+    --color-dark     : #272727;
+    --color-grey     : #fafafa;
+    --color-pink     : #fff8f3;
+    --font-roboto    : "Roboto", sans-serif;
+    --color-yellow   : #ffbd59;
+    --font-yeseva    : "Yeseva One", serif;
+}
+
+/*basic styles*/
+html {
+    box-sizing : border-box;
+}
+
+*, *::before, *::after {
+    box-sizing : inherit;
+}
+
+body {
+    background-color : var(--color-pink);
+    color            : var(--color-black);
+    font-family      : var(--font-comfortaa);
+    font-size        : 14px;
+    font-weight      : 400;
+    line-height      : normal;
+}
+
+a {
+    color           : inherit;
+    display         : inline-block;
+    text-decoration : none;
+}
+
+button {
+    border  : none;
+    color   : inherit;
+    cursor  : pointer;
+    display : inline-block;
+    font    : inherit;
+}
+
+input, input::placeholder {
+    color : inherit;
+    font  : inherit
+}
+
+.container {
+    margin    : 0 auto;
+    max-width : 1180px;
+    padding   : 0 10px;
+}
+
+.title {
+    color         : var(--color-black);
+    font-family   : var(--font-yeseva);
+    font-size     : 40px;
+    font-weight   : 400;
+    margin-bottom : 15px;
+}
+
+.button {
+    background-color : var(--color-yellow);
+    color            : var(--color-dark);
+    font-weight      : 600;
+    min-width        : 150px;
+    padding          : 19px;
+}
