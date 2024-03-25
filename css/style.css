@@ -53,16 +53,24 @@ a {
 }
 
 button {
-    border  : none;
-    color   : inherit;
-    cursor  : pointer;
-    display : inline-block;
-    font    : inherit;
+    background-color : transparent;
+    border           : none;
+    color            : inherit;
+    cursor           : pointer;
+    display          : inline-block;
+    font             : inherit;
 }
 
 input, input::placeholder {
     color : inherit;
     font  : inherit
+}
+
+img {
+    max-height      : 100%;
+    max-width       : 100%;
+    object-fit      : contain;
+    object-position : center;
 }
 
 .container {
@@ -85,6 +93,7 @@ input, input::placeholder {
     font-weight      : 600;
     min-width        : 150px;
     padding          : 19px;
+    text-align       : center;
 }
 
 .visually-hidden {
@@ -167,14 +176,52 @@ input, input::placeholder {
     background-position : center;
     background-repeat   : no-repeat;
     background-size     : contain;
+    bottom              : 0;
     content             : "";
     height              : 20px;
     left                : 0;
     position            : absolute;
-    top                 : 50%;
-    transform           : translateY(-50%);
     width               : 20px;
 }
+
+/*
+
+===========================
+    HERO
+===========================
+*/
+.hero__inner {
+    padding  : 194px 0 415px;
+    position : relative;
+}
+
+.hero__info {
+    max-width : 390px;
+    position : relative;
+    z-index : 2;
+}
+
+.hero__title {
+    font-family   : var(--font-yeseva);
+    font-size     : 30px;
+    font-weight   : 400;
+    margin-bottom : 15px;
+}
+
+.hero__text {
+    margin-bottom : 48px;
+}
+
+.hero__picture {
+    left     : 241px;
+    position : absolute;
+    top      : 30px;
+}
+
+.hero__picture img {
+    max-width : unset;
+}
+
 
 /*
 ===========================
@@ -254,16 +301,26 @@ input, input::placeholder {
 ===========================
 */
 @media (max-width : 992px) {
-    .menu__link, .tel {
-        font-size : 10px;
+    .container {
+        max-width : 960px;
     }
 
-    .footer {
-        font-size : 10px;
+    .header__tel {
+        padding-left : 15px;
+    }
+
+    .header__tel::before {
+        bottom : 3px;
+        height : 10px;
+        width  : 10px;
     }
 
     .footer__inner {
         flex-wrap : wrap;
+    }
+
+    .footer__menu {
+        margin : 0 0 0 auto;
     }
 
     .footer__contacts {
@@ -271,9 +328,38 @@ input, input::placeholder {
         margin      : 15px 0 0;
         width       : 100%;
     }
+
+    .hero__info {
+        max-width : 335px;
+    }
+
+    .hero__picture {
+        left : 297px;
+    }
+
+    .hero__picture img {
+        height    : unset;
+        max-width : 655px;
+    }
+
+    .hero__inner {
+        padding : 123px 0 238px;
+    }
+
+    .hero__text {
+        margin-bottom : 30px;
+    }
 }
 
 @media (max-width : 768px) {
+    .container {
+        max-width : 640px;
+    }
+
+    body {
+        font-size : 10px;
+    }
+
     .header__logo {
         order : 1;
     }
@@ -302,22 +388,49 @@ input, input::placeholder {
         top              : 100%;
         transform        : translateX(100%);
         transition       : transform 0.2s ease-out;
+        z-index : 9999;
     }
 
     .menu__list--active {
         transform : translateX(0);
     }
+
+    .hero__info {
+        max-width : 236px;
+    }
+
+    .hero__title {
+        font-size : 20px;
+    }
+
+    .button {
+        padding : 16px;
+        min-width: 120px;
+    }
+
+    .hero__text {
+        margin-bottom : 20px;
+    }
+
+    .hero__picture {
+        left : 180px;
+    }
+
 }
 
 @media (max-width : 576px) {
+    .footer {
+        font-size : 14px;
+    }
+
     .footer__inner {
         align-items    : center;
         flex-direction : column;
-        padding : 50px 0;
+        padding        : 50px 0;
     }
 
     .footer__menu-list {
-        flex-direction : column;
+        flex-direction  : column;
         text-align-last : center;
     }
 
@@ -328,4 +441,48 @@ input, input::placeholder {
     .footer__contacts {
         margin : 0;
     }
+
+    .hero__info {
+        max-width: 180px;
+    }
+
+    .hero__title {
+        font-size : 15px;
+    }
+
+    .hero__text {
+        margin-bottom : 15px;
+    }
+
+    .hero__picture {
+        left : 167px;
+    }
+
+    .hero__inner {
+        padding : 110px 0 130px;
+    }
+
+    .button {
+        padding : 11px;
+        min-width: 90px;
+    }
+}
+
+@media (max-width: 360px) {
+    .hero__inner {
+        padding : 60px 0 50px;
+    }
+
+    .hero__info {
+        max-width: 203px;
+    }
+
+    .hero__picture {
+        left : 219px;
+    }
+
+    .hero__title {
+        font-size : 18px;
+    }
+
 }
