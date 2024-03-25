@@ -429,6 +429,62 @@ img {
 
 /*
 ===========================
+    STAGES
+===========================
+*/
+.stages__list {
+    counter-reset         : listItems;
+    display               : grid;
+    flex                  : 1;
+    gap                   : 70px 25px;
+    grid-template-columns : repeat(2, minmax(155px, 1fr));
+    padding               : 0 0 80px 20px;
+}
+
+.stage {
+    align-items     : flex-start;
+    column-gap      : 38px;
+    display         : flex;
+    justify-content : space-between;
+    position        : relative;
+}
+
+.stage::before {
+    bottom            : 0;
+    color             : var(--color-beige);
+    content           : counter(listItems, decimal-leading-zero);
+    counter-increment : listItems;
+    font-family       : var(--font-yeseva);
+    font-size         : 30px;
+    left              : 0;
+    position          : absolute;
+}
+
+.stage__text {
+    max-width      : 171px;
+    padding-bottom : 40px;
+}
+
+.stage:nth-of-type(4n - 1),
+.stage:nth-of-type(4n) {
+    flex-direction : row-reverse;
+}
+
+.stage:nth-of-type(4n - 1)::before,
+.stage:nth-of-type(4n)::before {
+    left  : auto;
+    right : 0;
+}
+
+.stage__img {
+    flex-shrink : 1;
+    height      : 100%;
+    object-fit  : cover;
+    width       : clamp(67px, 44%, 160px);
+}
+
+/*
+===========================
     ADAPTIVE
 ===========================
 */
@@ -498,6 +554,42 @@ img {
         gap     : 60px;
         padding : 0 0 60px 12px;
     }
+
+    .stages__list {
+        gap          : 35px;
+        padding-left : 0;
+    }
+
+    .stages__inner {
+        column-gap : 25px;
+    }
+
+    .stage {
+        gap: 0 30px;
+    }
+}
+
+@media (max-width: 950px) {
+    .stages__inner {
+        gap: 0 5px;
+    }
+
+    .stages__list {
+        gap: 26px 35px;
+    }
+
+    .stage {
+        gap: 0 20px;
+    }
+
+    .stage__text {
+        font-size : 10px;
+    }
+
+    .stage::before {
+        font-size : 25px;
+    }
+
 }
 
 @media (max-width : 768px) {
@@ -640,6 +732,23 @@ img {
     .products__item-button {
         min-width : 100px;
         padding   : 10px;
+    }
+
+    .stages__list {
+        gap: 25px;
+        padding : 0 0 60px 0;
+    }
+
+    .stage {
+        gap: 0 15px;
+    }
+
+    .stage__text {
+        font-size : 8px;
+    }
+
+    .stage::before {
+        font-size : 20px;
     }
 }
 
@@ -824,5 +933,21 @@ img {
         font-size : 8px;
         min-width : 80px;
         padding   : 10px;
+    }
+
+    .stage__text {
+        font-size : 6px;
+    }
+
+    .stage::before {
+        font-size : 12px;
+    }
+
+    .stage {
+        gap: 0 16px;
+    }
+
+    .stages__list {
+        gap: 20px 25px;
     }
 }
