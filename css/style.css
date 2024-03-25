@@ -110,8 +110,23 @@ img {
 }
 
 .main {
-    overflow-x: hidden;
+    overflow-x : hidden;
 }
+
+.section {
+    margin-bottom : 150px;
+}
+
+.section__inner {
+    display         : flex;
+    justify-content : space-between;
+}
+
+.section__info {
+    flex-shrink : 0;
+    max-width   : 372px;
+}
+
 
 /*
 ===========================
@@ -316,11 +331,6 @@ img {
     justify-content : space-between;
 }
 
-.about__info {
-    flex-shrink : 0;
-    max-width   : 370px;
-}
-
 .about__title {
     color : var(--color-grey);
 }
@@ -370,6 +380,51 @@ img {
 
 .about__img-descr {
     font-size : 11px;
+}
+
+/*
+===========================
+    PRODUCTS
+===========================
+*/
+.products__list {
+    display               : grid;
+    gap                   : 50px 90px;
+    grid-template-columns : repeat(2, 1fr);
+    padding               : 0 48px 80px 70px;
+}
+
+.products__item {
+    align-items    : center;
+    display        : flex;
+    flex-direction : column;
+    text-align     : center;
+}
+
+.products__item-image {
+    height        : auto;
+    margin-bottom : 8px;
+}
+
+.products__item-price {
+    margin-bottom : 12px;
+}
+
+.products__item-title {
+    margin-bottom : 16px;
+}
+
+.products__item-price,
+.products__item-title {
+    font-family : var(--font-yeseva);
+    font-size   : 16px;
+    font-weight : 400;
+}
+
+.products__item-text {
+    flex          : 1;
+    font-size     : 12px;
+    margin-bottom : 27px;
 }
 
 /*
@@ -427,12 +482,21 @@ img {
         margin-bottom : 30px;
     }
 
-    .about__info {
+    .section__info {
         max-width : 300px;
     }
 
     .about__images {
         padding-left : 20px;
+    }
+
+    .products__text {
+        font-size : 10px;
+    }
+
+    .products__list {
+        gap     : 60px;
+        padding : 0 0 60px 12px;
     }
 }
 
@@ -489,8 +553,9 @@ img {
     }
 
     .button {
+        font-size : 12px;
         min-width : 120px;
-        padding   : 16px;
+        padding   : 14px;
     }
 
     .hero__text {
@@ -501,7 +566,7 @@ img {
         left : 180px;
     }
 
-    .about__info {
+    .section__info {
         max-width : 200px;
     }
 
@@ -532,7 +597,6 @@ img {
         max-width    : 120px;
     }
 
-
     .about__img-block:nth-of-type(even) .about__img {
         height    : unset;
         max-width : 191px;
@@ -540,6 +604,42 @@ img {
 
     .about {
         padding : 50px 0 60px;
+    }
+
+    .section__inner {
+        column-gap : 10px;
+    }
+
+    .products__list {
+        gap          : 30px 20px;
+        padding-left : 20px;
+    }
+
+    .products__item-image {
+        margin-bottom : 5px;
+    }
+
+    .products__item-price,
+    .products__item-title {
+        font-size : 12px;
+    }
+
+    .products__item-text {
+        font-size     : 8px;
+        margin-bottom : 19px;
+    }
+
+    .products__item-price {
+        margin-bottom : 7px;
+    }
+
+    .products__item-title {
+        margin-bottom : 10px;
+    }
+
+    .products__item-button {
+        min-width : 100px;
+        padding   : 10px;
     }
 }
 
@@ -623,6 +723,26 @@ img {
         aspect-ratio : 1/1;
         max-width    : 140px;
     }
+
+    .section__inner {
+        align-items    : center;
+        flex-direction : column;
+        gap            : 30px 0;
+    }
+
+    .section__info:not(.about__info) {
+        max-width  : 300px;
+        text-align : center;
+    }
+
+    .products__list {
+        gap     : 30px;
+        padding : 0 20px 60px;
+    }
+
+    .section {
+        margin-bottom : 50px;
+    }
 }
 
 @media (max-width : 360px) {
@@ -658,18 +778,51 @@ img {
         max-width : 234px;
     }
 
-    .about__text {
-        font-size : 8px;
-    }
-
     .about__images {
+        margin-left    : 12px;
         margin-top     : 14px;
         padding-bottom : 40px;
-        padding-left : 12px;
-        margin-left : 12px;
+        padding-left   : 12px;
     }
 
     .about__img-block:nth-of-type(1n + 2) {
         display : none;
+    }
+
+    .about__info {
+        max-width : 235px;
+    }
+
+    .about__text,
+    .products__text {
+        font-size : 8px;
+    }
+
+    .about__inner {
+        row-gap : 25px;
+    }
+
+    .products__item-price,
+    .products__item-title {
+        font-size : 10px;
+    }
+
+    .products__item-text {
+        font-size     : 6px;
+        margin-bottom : 17px;
+    }
+
+    .products__item-price {
+        margin-bottom : 5px;
+    }
+
+    .products__item-title {
+        margin-bottom : 7px;
+    }
+
+    .products__item-button {
+        font-size : 8px;
+        min-width : 80px;
+        padding   : 10px;
     }
 }
