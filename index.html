@@ -1,329 +1,440 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HM Candler</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&family=Roboto&family=Yeseva+One&display=swap"
-          rel="stylesheet">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>HM Candler</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&family=Roboto&family=Yeseva+One&display=swap"
+            rel="stylesheet" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
 
-    <header class="header">
-        <div class="container">
-            <div class="header__inner">
-                <a class="logo header__logo" href="#">
-                    <img class="logo__img" width="70" height="70" src="images/logo_header.png" alt="">
-                </a>
-                <nav class="menu header__menu">
-                    <button class="menu__button" type="button"></button>
-                    <ul class="menu__list header__menu-list">
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">Про нас</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">Каталог</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">Команда</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">Відгуки</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">Курси</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">Контакти</a>
-                        </li>
-                    </ul>
-                </nav>
-                <a class="tel header__tel" href="tel:+4565789876">+45 65 78 98 76</a>
-            </div>
-        </div>
-    </header>
-
-    <main class="main">
-        <section class="hero">
+    <body>
+        <header class="header">
             <div class="container">
-                <div class="hero__inner">
-                    <div class="hero__info">
-                        <p class="hero__title">Створіть атмосферу затишку та гармонії!</p>
-                        <p class="hero__text">
-                            Створіть особливу атмосферу у своєму домі з нашою екологічно чистою та якісною продукцією зі
-                            100% натуральної соєвого воску.
-                        </p>
-                        <a class="hero__button button" href="#" type="button">Купити</a>
-                    </div>
-                    <picture class="hero__picture">
-                        <source srcset="images/hero/hero_s.png" media="(max-width: 360px)" width="176" height="205">
-                        <source srcset="images/hero/hero_m.png" media="(max-width: 576px)" width="310" height="309">
-                        <img src="images/hero/hero_l.png" width="1069" height="670" alt="">
-                    </picture>
-                </div>
-            </div>
-        </section>
-        <section class="about section">
-            <div class="container">
-                <div class="about__inner">
-                    <div class="section__info about__info">
-                        <h2 class="title about__title">Про нас</h2>
-                        <div class="about__text-block">
-                            <p class="about__text">
-                                Богдан творець бренду який завжди зацікавлений у виготовленні різноманітних речей вдома.
-                                Він регулярно експериментував з різними матеріалами та інструментами, спробувавши свої
-                                сили у багатьох галузях, включаючи виготовлення свічок.
-                            </p>
-                            <p class="about__text">
-                                Ссоєвий віск виготовляють із соєвих бобів, що зрощуються в Данії, і цей вид воску є
-                                екологічно чистим та безпечним для здоров'я.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="about__images candle-border">
-                        <div class="about__img-block">
-                            <img class="about__img" src="images/about/about1.jpg" width="215" height="220" alt="">
-                            <p class="about__img-descr">Насолоджуйтеся моментом</p>
-                        </div>
-                        <div class="about__img-block">
-                            <img class="about__img"
-                                 src="images/about/about2.png"
-                                 width="350"
-                                 height="355"
-                                 alt="">
-                            <p class="about__img-descr">Створіть улюблену атмосферу</p>
-                        </div>
-                        <div class="about__img-block">
-                            <img class="about__img" src="images/about/about3.jpg" width="215" height="220" alt="">
-                            <p class="about__img-descr">Виготовлені з любов'ю</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="products section">
-            <div class="container">
-                <div class="section__inner">
-                    <div class="section__info">
-                        <h2 class="title products__title">Наші товари</h2>
-                        <p class="products__text">
-                            Ми використовуємо тільки найкращі якісні матеріали: соєвий віск, віскові барвники,
-                            високоякісні ароматичні олії та бавовняні фітільці. Відтінки свічок дуже гармонійно
-                            поєднуються з ароматом, створюючи незабутню атмосферу у вашому домі.
-                        </p>
-                    </div>
-                    <ul class="products__list candle-border">
-                        <li class="products__item">
-                            <img class="products__item-image"
-                                 src="images/products/product1.jpg"
-                                 width="274"
-                                 height="310"
-                                 alt="">
-                            <i class="products__item-price">10$</i>
-                            <b class="products__item-title">"Сердечко кохання"</b>
-                            <p class="products__item-text">
-                                Запах: ніжний аромат троянди та ванілі. Для чого: для атмосфери романтичного настрою
-                            </p>
-                            <a class="button products__item-button" href="#">Купити</a>
-                        </li>
-                        <li class="products__item">
-                            <img class="products__item-image"
-                                 src="images/products/product2.jpg"
-                                 width="274"
-                                 height="310"
-                                 alt="">
-                            <i class="products__item-price">20$</i>
-                            <b class="products__item-title">"Вихір кохання"</b>
-                            <p class="products__item-text">
-                                Запах: ніжний аромат лаванди. Для чого: для створення атмосфери затишку
-                            </p>
-                            <a class="button products__item-button" href="#">Купити</a>
-                        </li>
-                        <li class="products__item">
-                            <img class="products__item-image"
-                                 src="images/products/product3.jpg"
-                                 width="274"
-                                 height="310"
-                                 alt="">
-                            <i class="products__item-price">10$</i>
-                            <b class="products__item-title">"Веселка"</b>
-                            <p class="products__item-text">
-                                Запах: Свіжий аромат лайма. Для чого: для енергії та свіжості в приміщені.
-                            </p>
-                            <a class="button products__item-button" href="#">Купити</a>
-                        </li>
-                        <li class="products__item">
-                            <img class="products__item-image"
-                                 src="images/products/product4.jpg"
-                                 width="274"
-                                 height="310"
-                                 alt="">
-                            <i class="products__item-price">10$</i>
-                            <b class="products__item-title">"Жіноча чарівність"</b>
-                            <p class="products__item-text">
-                                Запах: ніжний аромат лаванди та фрезій. Для чого: для затишку та комфорту.
-                            </p>
-                            <a class="button products__item-button" href="#">Купити</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <section class="section stages">
-            <div class="container">
-                <div class="section__inner stages__inner">
-                    <div class="section__info stages__info">
-                        <h2 class="title stages__title">Етапи створення свічок</h2>
-                        <p class="stages__text stages__text">
-                            Створення свічки із соєвого воску може складатися з наступних етапів:
-                        </p>
-                    </div>
-                    <ol class="stages__list candle-border">
-                        <li class="stages__item stage">
-                            <p class="stage__text">
-                                Підготовка матеріалів: дрібні фрагменти соєвого воску, фітіль для свічки, ароматизатори,
-                                барвники та інші додаткові матеріали.
-                            </p>
-                            <img class="stage__img" width="159" height="221" src="images/stages/stage1.jpg" alt="">
-                        </li>
-                        <li class="stages__item stage">
-                            <p class="stage__text">
-                                Підготовка форми: вибір форми для свічки та підготовка її до наповнення воском.
-                            </p>
-                            <img class="stage__img" width="159" height="221" src="images/stages/stage2.jpg" alt="">
-                        </li>
-                        <li class="stages__item stage">
-                            <p class="stage__text">
-                                Приготування воску: розплавлення соєвого воску у плавильному пристрої до потрібної
-                                температури. Додавання ароматизаторів та барвників за необхідності.
-                            </p>
-                            <img class="stage__img" width="159" height="221" src="images/stages/stage3.jpg" alt="">
-                        </li>
-                        <li class="stages__item stage">
-                            <p class="stage__text">
-                                Підготовка фітіля: вставлення фітіля до форми та зафіксування його так, щоб він був
-                                рівномірно напружений.
-                            </p>
-                            <img class="stage__img" width="159" height="221" src="images/stages/stage4.jpg" alt="">
-                        </li>
-                        <li class="stages__item stage">
-                            <p class="stage__text">
-                                Підготовка матеріалів: дрібні фрагменти соєвого воску, фітіль для свічки, ароматизатори,
-                                барвники та інші додаткові матеріали.
-                            </p>
-                            <img class="stage__img" width="159" height="221" src="images/stages/stage5.jpg" alt="">
-                        </li>
-                        <li class="stages__item stage">
-                            <p class="stage__text">
-                                Наповнення форми: воск налити до форми, поки вона не заповниться повністю. Чекати, доки
-                                він затвердіє.
-                            </p>
-                            <img class="stage__img" width="159" height="221" src="images/stages/stage6.jpg" alt="">
-                        </li>
-                        <li class="stages__item stage">
-                            <p class="stage__text">
-                                Приготування воску: розплавлення соєвого воску у плавильному пристрої до потрібної
-                                температури. Додавання ароматизаторів та барвників за необхідності.
-                            </p>
-                            <img class="stage__img" width="159" height="221" src="images/stages/stage7.jpg" alt="">
-                        </li>
-                        <li class="stages__item stage">
-                            <p class="stage__text">
-                                Підготовка фітіля: вставлення фітіля до форми та зафіксування його так, щоб він був
-                                рівномірно напружений.
-                            </p>
-                            <img class="stage__img" width="159" height="221" src="images/stages/stage8.jpg" alt="">
-                        </li>
-                        <li class="stages__item stage">
-                            <p class="stage__text">
-                                Підготовка матеріалів: дрібні фрагменти соєвого воску, фітіль для свічки, ароматизатори,
-                                барвники та інші додаткові матеріали.
-                            </p>
-                            <img class="stage__img" width="159" height="221" src="images/stages/stage9.jpg" alt="">
-                        </li>
-                        <li class="stages__item stage">
-                            <p class="stage__text">
-                                Наповнення форми: воск налити до форми, поки вона не заповниться повністю. Чекати, доки
-                                він затвердіє.
-                            </p>
-                            <img class="stage__img" width="159" height="221" src="images/stages/stage10.jpg" alt="">
-                        </li>
-                    </ol>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__inner">
-                <a class="logo footer__logo" href="#">
-                    <img class="logo__img" width="71" height="72" src="images/logo_footer.png" alt="">
-                </a>
-                <nav class="menu footer__menu">
-                    <ul class="menu__list footer__menu-list">
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">Про нас</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">Каталог</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">Команда</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">Відгуки</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">Курси</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">Контакти</a>
-                        </li>
-                    </ul>
-                </nav>
-                <ul class="footer__contacts">
-                    <li class="footer__contacts-item">
-                        <a class="footer__tel" href="tel:+4534567892">+45 34 56 78 92</a>
-                    </li>
-                    <li class="footer__contacts-item">
-                        <a class="footer__mail" href="mailto:candelsCandels@gmail.com">candelsCandels@gmail.com</a>
-                    </li>
-                    <li class="footer__contacts-item">
-                        <ul class="socials">
-                            <li class="socials__item">
-                                <a class="socials__link socials__link--facebook" href="#">
-                                    <span class="visually-hidden">Facebook</span>
-                                </a>
+                <div class="header__inner">
+                    <a class="logo header__logo" href="#">
+                        <img class="logo__img" width="70" height="70" src="images/logo_header.png" alt="" />
+                    </a>
+                    <nav class="menu header__menu">
+                        <button class="menu__button" type="button"></button>
+                        <ul class="menu__list header__menu-list">
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">Про нас</a>
                             </li>
-                            <li class="socials__item">
-                                <a class="socials__link socials__link--instagram" href="#">
-                                    <span class="visually-hidden">Instagram</span>
-                                </a>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">Каталог</a>
                             </li>
-                            <li class="socials__item">
-                                <a class="socials__link socials__link--linkedin" href="#">
-                                    <span class="visually-hidden">Linkedin</span>
-                                </a>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">Команда</a>
                             </li>
-                            <li class="socials__item">
-                                <a class="socials__link socials__link--youtube" href="#">
-                                    <span class="visually-hidden">YouTube</span>
-                                </a>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">Відгуки</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">Курси</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">Контакти</a>
                             </li>
                         </ul>
-                    </li>
-                </ul>
+                    </nav>
+                    <a class="tel header__tel" href="tel:+4565789876">+45 65 78 98 76</a>
+                </div>
             </div>
-        </div>
-    </footer>
+        </header>
 
-    <script src="js/main.js"></script>
-</body>
+        <main class="main">
+            <section class="hero">
+                <div class="container">
+                    <div class="hero__inner">
+                        <div class="hero__info">
+                            <p class="hero__title">Створіть атмосферу затишку та гармонії!</p>
+                            <p class="hero__text">
+                                Створіть особливу атмосферу у своєму домі з нашою екологічно чистою та якісною
+                                продукцією зі 100% натуральної соєвого воску.
+                            </p>
+                            <a class="hero__button button" href="#" type="button">Купити</a>
+                        </div>
+                        <picture class="hero__picture">
+                            <source
+                                srcset="images/hero/hero_s.png"
+                                media="(max-width: 360px)"
+                                width="176"
+                                height="205" />
+                            <source
+                                srcset="images/hero/hero_m.png"
+                                media="(max-width: 576px)"
+                                width="310"
+                                height="309" />
+                            <img src="images/hero/hero_l.png" width="1069" height="670" alt="" />
+                        </picture>
+                    </div>
+                </div>
+            </section>
+            <section class="about section">
+                <div class="container">
+                    <div class="about__inner">
+                        <div class="section__info about__info">
+                            <h2 class="title about__title">Про нас</h2>
+                            <div class="about__text-block">
+                                <p class="about__text">
+                                    Богдан творець бренду який завжди зацікавлений у виготовленні різноманітних речей
+                                    вдома. Він регулярно експериментував з різними матеріалами та інструментами,
+                                    спробувавши свої сили у багатьох галузях, включаючи виготовлення свічок.
+                                </p>
+                                <p class="about__text">
+                                    Соєвий віск виготовляють із соєвих бобів, що зрощуються в Данії, і цей вид воску є
+                                    екологічно чистим та безпечним для здоров'я.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="about__images candle-border">
+                            <div class="about__img-block">
+                                <img class="about__img" src="images/about/about1.jpg" width="215" height="220" alt="" />
+                                <p class="about__img-descr">Насолоджуйтеся моментом</p>
+                            </div>
+                            <div class="about__img-block">
+                                <img class="about__img" src="images/about/about2.png" width="350" height="355" alt="" />
+                                <p class="about__img-descr">Створіть улюблену атмосферу</p>
+                            </div>
+                            <div class="about__img-block">
+                                <img class="about__img" src="images/about/about3.jpg" width="215" height="220" alt="" />
+                                <p class="about__img-descr">Виготовлені з любов'ю</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="products section">
+                <div class="container">
+                    <div class="section__inner">
+                        <div class="section__info">
+                            <h2 class="title products__title">Наші товари</h2>
+                            <p class="products__text">
+                                Ми використовуємо тільки найкращі якісні матеріали: соєвий віск, віскові барвники,
+                                високоякісні ароматичні олії та бавовняні фітільці. Відтінки свічок дуже гармонійно
+                                поєднуються з ароматом, створюючи незабутню атмосферу у вашому домі.
+                            </p>
+                        </div>
+                        <ul class="products__list candle-border">
+                            <li class="products__item">
+                                <img
+                                    class="products__item-image"
+                                    src="images/products/product1.jpg"
+                                    width="274"
+                                    height="310"
+                                    alt="" />
+                                <i class="products__item-price">10$</i>
+                                <b class="products__item-title">"Сердечко кохання"</b>
+                                <p class="products__item-text">
+                                    Запах: ніжний аромат троянди та ванілі. Для чого: для атмосфери романтичного настрою
+                                </p>
+                                <a class="button products__item-button" href="#">Купити</a>
+                            </li>
+                            <li class="products__item">
+                                <img
+                                    class="products__item-image"
+                                    src="images/products/product2.jpg"
+                                    width="274"
+                                    height="310"
+                                    alt="" />
+                                <i class="products__item-price">20$</i>
+                                <b class="products__item-title">"Вихір кохання"</b>
+                                <p class="products__item-text">
+                                    Запах: ніжний аромат лаванди. Для чого: для створення атмосфери затишку
+                                </p>
+                                <a class="button products__item-button" href="#">Купити </a>
+                            </li>
+                            <li class="products__item">
+                                <img
+                                    class="products__item-image"
+                                    src="images/products/product3.jpg"
+                                    width="274"
+                                    height="310"
+                                    alt="" />
+                                <i class="products__item-price">10$</i>
+                                <b class="products__item-title">"Веселка"</b>
+                                <p class="products__item-text">
+                                    Запах: Свіжий аромат лайма. Для чого: для енергії та свіжості в приміщені.
+                                </p>
+                                <a class="button products__item-button" href="#">Купити</a>
+                            </li>
+                            <li class="products__item">
+                                <img
+                                    class="products__item-image"
+                                    src="images/products/product4.jpg"
+                                    width="274"
+                                    height="310"
+                                    alt="" />
+                                <i class="products__item-price">10$</i>
+                                <b class="products__item-title">"Жіноча чарівність"</b>
+                                <p class="products__item-text">
+                                    Запах: ніжний аромат лаванди та фрезій. Для чого: для затишку та комфорту.
+                                </p>
+                                <a class="button products__item-button" href="#">Купити</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="section stages">
+                <div class="container">
+                    <div class="section__inner stages__inner">
+                        <div class="section__info stages__info">
+                            <h2 class="title stages__title">Етапи створення свічок</h2>
+                            <p class="stages__text stages__text">
+                                Створення свічки із соєвого воску може складатися з наступних етапів:
+                            </p>
+                        </div>
+                        <ol class="stages__list candle-border">
+                            <li class="stages__item stage">
+                                <p class="stage__text">
+                                    Підготовка матеріалів: дрібні фрагменти соєвого воску, фітіль для свічки,
+                                    ароматизатори, барвники та інші додаткові матеріали.
+                                </p>
+                                <img
+                                    class="stage__img"
+                                    width="159"
+                                    height="221"
+                                    src="images/stages/stage1.jpg"
+                                    alt="" />
+                            </li>
+                            <li class="stages__item stage">
+                                <p class="stage__text">
+                                    Підготовка форми: вибір форми для свічки та підготовка її до наповнення воском.
+                                </p>
+                                <img
+                                    class="stage__img"
+                                    width="159"
+                                    height="221"
+                                    src="images/stages/stage2.jpg"
+                                    alt="" />
+                            </li>
+                            <li class="stages__item stage">
+                                <p class="stage__text">
+                                    Приготування воску: розплавлення соєвого воску у плавильному пристрої до потрібної
+                                    температури. Додавання ароматизаторів та барвників за необхідності.
+                                </p>
+                                <img
+                                    class="stage__img"
+                                    width="159"
+                                    height="221"
+                                    src="images/stages/stage3.jpg"
+                                    alt="" />
+                            </li>
+                            <li class="stages__item stage">
+                                <p class="stage__text">
+                                    Підготовка фітіля: вставлення фітіля до форми та зафіксування його так, щоб він був
+                                    рівномірно напружений.
+                                </p>
+                                <img
+                                    class="stage__img"
+                                    width="159"
+                                    height="221"
+                                    src="images/stages/stage4.jpg"
+                                    alt="" />
+                            </li>
+                            <li class="stages__item stage">
+                                <p class="stage__text">
+                                    Підготовка матеріалів: дрібні фрагменти соєвого воску, фітіль для свічки,
+                                    ароматизатори, барвники та інші додаткові матеріали.
+                                </p>
+                                <img
+                                    class="stage__img"
+                                    width="159"
+                                    height="221"
+                                    src="images/stages/stage5.jpg"
+                                    alt="" />
+                            </li>
+                            <li class="stages__item stage">
+                                <p class="stage__text">
+                                    Наповнення форми: воск налити до форми, поки вона не заповниться повністю. Чекати,
+                                    доки він затвердіє.
+                                </p>
+                                <img
+                                    class="stage__img"
+                                    width="159"
+                                    height="221"
+                                    src="images/stages/stage6.jpg"
+                                    alt="" />
+                            </li>
+                            <li class="stages__item stage">
+                                <p class="stage__text">
+                                    Приготування воску: розплавлення соєвого воску у плавильному пристрої до потрібної
+                                    температури. Додавання ароматизаторів та барвників за необхідності.
+                                </p>
+                                <img
+                                    class="stage__img"
+                                    width="159"
+                                    height="221"
+                                    src="images/stages/stage7.jpg"
+                                    alt="" />
+                            </li>
+                            <li class="stages__item stage">
+                                <p class="stage__text">
+                                    Підготовка фітіля: вставлення фітіля до форми та зафіксування його так, щоб він був
+                                    рівномірно напружений.
+                                </p>
+                                <img
+                                    class="stage__img"
+                                    width="159"
+                                    height="221"
+                                    src="images/stages/stage8.jpg"
+                                    alt="" />
+                            </li>
+                            <li class="stages__item stage">
+                                <p class="stage__text">
+                                    Підготовка матеріалів: дрібні фрагменти соєвого воску, фітіль для свічки,
+                                    ароматизатори, барвники та інші додаткові матеріали.
+                                </p>
+                                <img
+                                    class="stage__img"
+                                    width="159"
+                                    height="221"
+                                    src="images/stages/stage9.jpg"
+                                    alt="" />
+                            </li>
+                            <li class="stages__item stage">
+                                <p class="stage__text">
+                                    Наповнення форми: воск налити до форми, поки вона не заповниться повністю. Чекати,
+                                    доки він затвердіє.
+                                </p>
+                                <img
+                                    class="stage__img"
+                                    width="159"
+                                    height="221"
+                                    src="images/stages/stage10.jpg"
+                                    alt="" />
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+            <section class="courses section">
+                <div class="container">
+                    <div class="section__inner courses__inner">
+                        <div class="section__info">
+                            <h2 class="title">Наші курси</h2>
+                            <p class="courses__text">
+                                Наші курси дозволяють зробити перший крок в новій кар'єрі або поглибити знання в своїй
+                                галузі, розвиватися як професіонал, а також покращити якість свого життя.
+                            </p>
+                        </div>
+                        <ul class="courses__list candle-border">
+                            <li class="courses__item course">
+                                <div class="course__info" style="background-image: url(images/courses/course1.jpg)">
+                                    <ul class="course__info-list">
+                                        <li class="course__info-item course__name">Основи виготовлення свічок</li>
+                                        <li class="course__info-item course__duration">
+                                            Навчання - <span>20 год</span>
+                                        </li>
+                                        <li class="course__info-item course__price">Ціна - 40$</li>
+                                    </ul>
+                                </div>
+                                <div class="course__about">
+                                    <h3 class="course__title">Основи виготовлення свічок</h3>
+                                    <p class="course__text">
+                                        Будем навчати основам виготовлення свічок з різних матеріалів.
+                                    </p>
+                                    <a class="course__button button" href="#">Купити курс</a>
+                                </div>
+                            </li>
+                            <li class="courses__item course">
+                                <div class="course__info" style="background-image: url(images/courses/course2.jpg)">
+                                    <ul class="course__info-list">
+                                        <li class="course__info-item course__name">Мистецтво ароматерапії</li>
+                                        <li class="course__info-item course__duration">
+                                            Навчання - <span>20 год</span>
+                                        </li>
+                                        <li class="course__info-item course__price">Ціна - 40$</li>
+                                    </ul>
+                                </div>
+                                <div class="course__about">
+                                    <h3 class="course__title">Мистецтво ароматерапії</h3>
+                                    <p class="course__text">
+                                        Будем вивчати мистецтво ароматерапії та виготовлення свічок з різними ароматами.
+                                    </p>
+                                    <a class="course__button button" href="#">Купити курс</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <a class="logo footer__logo" href="#">
+                        <img class="logo__img" width="71" height="72" src="images/logo_footer.png" alt="" />
+                    </a>
+                    <nav class="menu footer__menu">
+                        <ul class="menu__list footer__menu-list">
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">Про нас</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">Каталог</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">Команда</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">Відгуки</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">Курси</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">Контакти</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <ul class="footer__contacts">
+                        <li class="footer__contacts-item">
+                            <a class="footer__tel" href="tel:+4534567892">+45 34 56 78 92</a>
+                        </li>
+                        <li class="footer__contacts-item">
+                            <a class="footer__mail" href="mailto:candelsCandels@gmail.com">candelsCandels@gmail.com</a>
+                        </li>
+                        <li class="footer__contacts-item">
+                            <ul class="socials">
+                                <li class="socials__item">
+                                    <a class="socials__link socials__link--facebook" href="#">
+                                        <span class="visually-hidden">Facebook</span>
+                                    </a>
+                                </li>
+                                <li class="socials__item">
+                                    <a class="socials__link socials__link--instagram" href="#">
+                                        <span class="visually-hidden">Instagram</span>
+                                    </a>
+                                </li>
+                                <li class="socials__item">
+                                    <a class="socials__link socials__link--linkedin" href="#">
+                                        <span class="visually-hidden">Linkedin</span>
+                                    </a>
+                                </li>
+                                <li class="socials__item">
+                                    <a class="socials__link socials__link--youtube" href="#">
+                                        <span class="visually-hidden">YouTube</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/main.js"></script>
+    </body>
 </html>
