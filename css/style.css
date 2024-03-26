@@ -123,12 +123,11 @@ img {
 
 .section__inner {
     display: flex;
-    justify-content: space-between;
 }
 
 .section__info {
-    max-width: 372px;
     flex-shrink: 0;
+    max-width: 372px;
 }
 
 /*
@@ -479,9 +478,9 @@ img {
 }
 
 .stage__img {
+    flex-shrink: 1;
     width: clamp(67px, 44%, 160px);
     height: 100%;
-    flex-shrink: 1;
     object-fit: cover;
 }
 
@@ -716,6 +715,32 @@ img {
 
 /*
 ===========================
+    CERTIFICATES
+===========================
+*/
+.certificates__content {
+    max-width: 100%;
+    padding: 0 0 70px 20px;
+}
+
+.certificates__slider {
+    padding-bottom: 55px;
+}
+
+.certificate {
+    max-width: 375px;
+}
+
+.certificate__img {
+    height: 100%;
+}
+
+.certificates__pagination {
+    max-width: calc(100% - 392px);
+}
+
+/*
+===========================
     ADAPTIVE
 ===========================
 */
@@ -839,6 +864,21 @@ img {
 
     .slider {
         padding-bottom: 25px;
+    }
+
+    .certificates__info {
+        max-width: 270px;
+    }
+    .certificates__inner {
+        gap: 0 18px;
+    }
+
+    .certificates__content {
+        padding-left: 0;
+    }
+
+    .certificates__pagination {
+        max-width: calc(100% - 288px);
     }
 }
 
@@ -1086,11 +1126,6 @@ img {
         padding-bottom: 3px;
     }
 
-    .feedbacks__pagination {
-        padding-right: 150px;
-        text-align: right;
-    }
-
     .feedback__name {
         margin-bottom: 10px;
         font-size: 12px;
@@ -1098,6 +1133,7 @@ img {
 
     .feedback__button {
         min-width: unset;
+        margin-bottom: 8px;
         font-size: 8px;
     }
 
@@ -1108,6 +1144,14 @@ img {
     .feedback__info-block::before {
         width: 15px;
         height: 15px;
+    }
+
+    .certificates__content {
+        padding-bottom: 60px;
+    }
+
+    .certificates__pagination {
+        max-width: calc(100% - 210px);
     }
 }
 
@@ -1221,6 +1265,10 @@ img {
     }
 
     .feedbacks__content {
+        max-width: 100%;
+    }
+
+    .certificates__pagination {
         max-width: 100%;
     }
 }
@@ -1368,16 +1416,12 @@ img {
     }
 
     .feedback__button {
+        margin-bottom: 0;
         align-self: center;
     }
 
     .feedbacks__slider {
         padding-bottom: 35px;
-    }
-
-    .feedbacks__pagination {
-        padding: 0;
-        text-align: center;
     }
 
     .feedback__video {
@@ -1389,5 +1433,9 @@ img {
     .feedback__play-btn {
         width: 41px;
         height: 41px;
+    }
+
+    .certificate__img {
+        height: 128px;
     }
 }

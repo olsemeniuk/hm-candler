@@ -16,10 +16,33 @@ function hideMenu(event) {
     menuList.classList.remove('menu__list--active');
 }
 
-const swiper = new Swiper('.feedbacks__slider', {
+const feedbacksSlider = new Swiper('.feedbacks__slider', {
     direction: 'horizontal',
     loop: true,
     pagination: {
-        el: '.feedbacks__pagination'
+        el: '.feedbacks__pagination',
+        clickable: true
+    }
+});
+
+const certificatesSlider = new Swiper('.certificates__slider', {
+    direction: 'horizontal',
+    loop: true,
+    pagination: {
+        el: '.certificates__pagination',
+        clickable: true
+    },
+    slidesPerView: 1,
+    spaceBetween: 10,
+    breakpoints: {
+        360: {
+            slidesPerView: 2,
+        },
+        576: {
+            slidesPerView: 3,
+        },
+        992: {
+            spaceBetween: 20
+        }
     }
 });
