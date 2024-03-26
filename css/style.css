@@ -741,6 +741,78 @@ img {
 
 /*
 ===========================
+    FAQ
+===========================
+*/
+.faq {
+}
+
+.faq__inner {
+    justify-content: space-between;
+    gap: 0 40px;
+}
+
+.faq__list {
+    flex: 1;
+}
+
+.faq__item {
+    background-color: var(--color-white);
+    box-shadow: 0 4px 11px rgba(196, 174, 151, 0.2);
+}
+
+.faq__item + .faq__item {
+    margin-top: 10px;
+}
+
+.faq__btn {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 16px 50px 16px 13px;
+    font-family: var(--font-yeseva);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    cursor: pointer;
+}
+
+.faq__btn::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 26px;
+    width: 16px;
+    height: 16px;
+    background-image: url("../images/icons/arrow-icon.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: translateY(-50%);
+    transition: transform 0.1s ease-in-out;
+}
+
+.faq__content-wrapper {
+    overflow: hidden;
+    height: 0;
+    transition: height 0.1s ease-in-out;
+}
+
+.faq__content {
+    padding: 17px 27px 57px 27px;
+}
+
+.faq__content ol {
+    padding-left: 20px;
+    list-style-type: decimal;
+}
+
+.faq__item--active .faq__btn::after {
+    transform: translateY(-50%) rotateX(180deg);
+}
+
+/*
+===========================
     PROMO
 ===========================
 */
@@ -1306,6 +1378,16 @@ img {
     .subscribe__img {
         max-width: 187px;
         max-height: 285px;
+    }
+
+    .faq__btn {
+        font-size: 12px;
+        padding: 12px 45px 12px 7px;
+    }
+
+    .faq__btn::after {
+        width: 12px;
+        height: 12px;
     }
 }
 

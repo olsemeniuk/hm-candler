@@ -36,13 +36,45 @@ const certificatesSlider = new Swiper('.certificates__slider', {
     spaceBetween: 10,
     breakpoints: {
         360: {
-            slidesPerView: 2,
+            slidesPerView: 2
         },
         576: {
-            slidesPerView: 3,
+            slidesPerView: 3
         },
         992: {
             spaceBetween: 20
         }
     }
 });
+
+const faqBlock = document.querySelector('.faq__list');
+
+faqBlock.addEventListener('click', toggleAccordion);
+
+function toggleAccordion(event) {
+    const { target } = event;
+    const isButton = target.closest('.faq__btn');
+    if (!isButton) return;
+
+    const parentItem = isButton.closest('.faq__item');
+    const contentWrapper = parentItem.querySelector('.faq__content-wrapper');
+    const itemContent = parentItem.querySelector('.faq__content');
+
+    const contentHeight = window.getComputedStyle(itemContent).getPropertyValue('height');
+    const itemIsActive = parentItem.classList.contains('faq__item--active');
+
+    closeAllFaq();
+    if (!itemIsActive) {
+        contentWrapper.style.height = contentHeight;
+        parentItem.classList.add('faq__item--active');
+    }
+}
+
+function closeAllFaq() {
+    const items = document.querySelectorAll('.faq__item');
+    items.forEach(item => {
+        item.classList.remove('faq__item--active');
+        const contentWrapper = item.querySelector('.faq__content-wrapper');
+        contentWrapper.style.height = 0;
+    });
+}
