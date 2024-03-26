@@ -773,6 +773,63 @@ img {
 
 /*
 ===========================
+    SUBSCRIBE
+===========================
+*/
+.subscribe {
+    margin-bottom: 50px;
+}
+
+.subscribe__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 50px;
+}
+
+.subscribe__img {
+    width: clamp(187px, 38%, 448px);
+    height: 604px;
+    object-fit: cover;
+}
+
+.form {
+    flex: 1;
+    padding: 75px 42px;
+    background-color: var(--color-white);
+}
+
+.form__title {
+    margin-bottom: 50px;
+}
+
+.form__inputs {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.form__input {
+    padding: 11px 7px;
+    border: none;
+    border-bottom: 1px solid var(--color-black);
+}
+
+.form__input + .form__input {
+    margin-top: 13px;
+}
+
+.form__input::placeholder {
+    color: #b3b3b3;
+}
+
+.form__button {
+    min-width: 170px;
+    padding: 17px;
+}
+
+/*
+===========================
     ADAPTIVE
 ===========================
 */
@@ -919,6 +976,19 @@ img {
 
     .promo__inner {
         padding: 0 60px;
+    }
+
+    .form {
+        padding: 75px 30px;
+    }
+
+    .subscribe__img {
+        max-width: 335px;
+        height: 510px;
+    }
+
+    .subscribe__inner {
+        gap: 0 30px;
     }
 }
 
@@ -1203,13 +1273,39 @@ img {
     }
 
     .promo__inner {
-        padding: 0 33px;
         align-items: flex-start;
         gap: 0 60px;
+        padding: 0 33px;
     }
 
     .promo__button {
         margin: 10px 0 0 0;
+    }
+
+    .subscribe__inner {
+        gap: 0 15px;
+    }
+
+    .form {
+        padding: 30px 20px;
+    }
+
+    .form__title {
+        margin-bottom: 20px;
+        font-size: 15px;
+    }
+
+    .form__input {
+        font-size: 8px;
+    }
+
+    .form__inputs {
+        margin-bottom: 30px;
+    }
+
+    .subscribe__img {
+        max-width: 187px;
+        max-height: 285px;
     }
 }
 
@@ -1341,6 +1437,15 @@ img {
 
     .promo__button {
         font-size: 8px;
+    }
+
+    .subscribe__img {
+        display: none;
+    }
+
+    .subscribe__inner {
+        display: block;
+        padding: 0 10px;
     }
 }
 
