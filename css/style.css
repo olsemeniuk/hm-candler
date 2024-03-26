@@ -741,6 +741,38 @@ img {
 
 /*
 ===========================
+    PROMO
+===========================
+*/
+.promo {
+    padding: 128px 0 145px;
+    background-image: url("../images/promo_bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.promo__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 0 108px;
+    padding: 0 117px 0 56px;
+    color: var(--color-white);
+}
+
+.promo__text {
+    font-family: var(--font-yeseva);
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.promo__button {
+    margin-bottom: 10px;
+}
+
+/*
+===========================
     ADAPTIVE
 ===========================
 */
@@ -879,6 +911,14 @@ img {
 
     .certificates__pagination {
         max-width: calc(100% - 288px);
+    }
+
+    .promo {
+        padding: 120px 0;
+    }
+
+    .promo__inner {
+        padding: 0 60px;
     }
 }
 
@@ -1153,6 +1193,24 @@ img {
     .certificates__pagination {
         max-width: calc(100% - 210px);
     }
+
+    .promo {
+        padding: 65px 0 30px;
+    }
+
+    .promo__text {
+        font-size: 15px;
+    }
+
+    .promo__inner {
+        padding: 0 33px;
+        align-items: flex-start;
+        gap: 0 60px;
+    }
+
+    .promo__button {
+        margin: 10px 0 0 0;
+    }
 }
 
 @media (max-width: 576px) {
@@ -1270,6 +1328,19 @@ img {
 
     .certificates__pagination {
         max-width: 100%;
+    }
+
+    .promo {
+        padding: 42px 0;
+    }
+
+    .promo__inner {
+        gap: 0 50px;
+        padding: 0;
+    }
+
+    .promo__button {
+        font-size: 8px;
     }
 }
 
